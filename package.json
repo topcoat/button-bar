@@ -35,6 +35,7 @@
     "topcoat-theme": "~0.5.14",
     "topcoat-button": "~0.5.3",
     "topcoat-button-base": "~0.6.1",
-    "topcoat-utils": "~0.1.3"
+    "topcoat-utils": "~0.1.3",
+    "topcoat-button-bar-base": "~0.1.1"
   }
 }
