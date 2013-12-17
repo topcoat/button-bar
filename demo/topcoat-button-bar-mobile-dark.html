@@ -81,14 +81,9 @@
   border-bottom-right-radius: 6px;
 }
 
-.topcoat-button-bar__item:first-child &gt; .topcoat-button-bar__button,
-.topcoat-button-bar__item:first-child &gt; .topcoat-button-bar__button--large {
+.topcoat-button-bar__item:not(:last-child) &gt; .topcoat-button-bar__button,
+.topcoat-button-bar__item:not(:last-child) &gt; .topcoat-button-bar__button--large {
   border-right: none;
-}
-
-.topcoat-button-bar__item:last-child &gt; .topcoat-button-bar__button,
-.topcoat-button-bar__item:last-child &gt; .topcoat-button-bar__button--large {
-  border-left: none;
 }
 
 .topcoat-button-bar__button {

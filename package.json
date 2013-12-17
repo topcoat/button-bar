@@ -33,6 +33,7 @@
     "grunt-autoprefixer": "~0.3.1"
   },
   "dependencies": {
+    "topcoat-theme": "0.6.4",
     "topcoat-button": "0.5.4",
     "topcoat-button-base": "0.6.1",
     "topcoat-utils": "0.2.0",
