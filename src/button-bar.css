@@ -15,8 +15,8 @@
 * limitations under the License.
 *
 */
-@import topcoat-button
-@import button-bar
+@import "topcoat-button";
+@import "topcoat-button-bar-base";
 /* topdoc
   name: Button Bar
   description: Component of grouped buttons
@@ -45,60 +45,55 @@
     - group
     - bar
 */
-.topcoat-button-bar {
-  @extend .button-bar
+.button-bar {
+  extend: %button-bar;
 }
 
-.topcoat-button-bar__item {
-  @extend .button-bar__item
+.button-bar__item {
+  extend: %button-bar__item;
 }
 
-.topcoat-button-bar > .topcoat-button-bar__item:first-child {
-  border-top-left-radius: var-border-radius;
-  border-bottom-left-radius: var-border-radius;
+.button-bar > .button-bar__item:first-child {
+  border-top-left-radius: var(border-radius);
+  border-bottom-left-radius: var(border-radius);
 }
 
-.topcoat-button-bar > .topcoat-button-bar__item:last-child {
-  border-top-right-radius: var-border-radius;
-  border-bottom-right-radius: var-border-radius;
+.button-bar > .button-bar__item:last-child {
+  border-top-right-radius: var(border-radius);
+  border-bottom-right-radius: var(border-radius);
 }
 
-.topcoat-button-bar__item > input {
-  @extend .button-bar__item > input
+.button-bar__item > input {
+  extend: %button-bar__item__input;
 }
 
-.topcoat-button-bar__item:first-child > .topcoat-button-bar__button,
-.topcoat-button-bar__item:first-child > .topcoat-button-bar__button--large {
+.topcoat-button-bar__item:not(:last-child) > .topcoat-button-bar__button,
+.topcoat-button-bar__item:not(:last-child) > .topcoat-button-bar__button--large {
   border-right: none;
 }
 
-.topcoat-button-bar__item:last-child > .topcoat-button-bar__button,
-.topcoat-button-bar__item:last-child > .topcoat-button-bar__button--large {
-  border-left: none;
-}
-
 .topcoat-button-bar__button {
-  @extend .topcoat-button;
+  extend: .button;
   border-radius: inherit;
 }
 
 .topcoat-button-bar__button:active,
 .topcoat-button-bar__button--large:active,
 :checked + .topcoat-button-bar__button {
-  @extend .topcoat-button:active
+  extend: .button:active;
 }
 
 .topcoat-button-bar__button:disabled {
-  @extend .topcoat-button:disabled
+  extend: .button:disabled;
 }
 
 .topcoat-button-bar__button:hover {
-  @extend .topcoat-button:hover
+  extend: .button:hover;
 }
 
 .topcoat-button-bar__button:focus,
 .topcoat-button-bar__button--large:focus {
-  @extend .topcoat-button:focus
+  extend: .button:focus;
   z-index: 1;
 }
 /* topdoc
@@ -129,14 +124,14 @@
     - large
 */
 .topcoat-button-bar__button--large {
-  @extend .topcoat-button--large
+  extend: .button--large;
   border-radius: inherit;
 }
 
 .topcoat-button-bar__button--large:disabled {
-  @extend .topcoat-button:disabled
+  extend: .button:disabled;
 }
 
 .topcoat-button-bar__button--large:hover {
-  @extend .topcoat-button:hover
+  extend: .button:hover;
 }

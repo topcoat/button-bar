@@ -1,62 +1,46 @@
+/**
+*
+* Copyright 2012 Adobe Systems Inc.;
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+
 /*global module:false*/
+
 module.exports = function(grunt) {
 
-
-    // Project configuration.
     grunt.initConfig({
 
         clean: {
-            release: ['css']
+            release: ['css'],
         },
 
-        stylus: {
+        topcoat: {
             options: {
-                paths: ['node_modules/topcoat-button-bar-base/src', 'node_modules/topcoat-button-base/src', 'node_modules/topcoat-button/src', 'node_modules/topcoat-utils/src/mixins', 'node_modules/topcoat-theme/src'],
-                import: ['topcoat-button-base'],
-                compress: false
+                browsers: ['last 2 versions'],
+                namespace: 'topcoat',
+                license: grunt.file.read('test/fixtures/license.txt')
             },
-
-            mobilelight: {
-                options: {
-                    import: ['theme-topcoat-mobile-light']
-                },
-
+            compile: {
                 files: [{
-                    src: 'src/topcoat-button-bar.styl',
-                    dest: 'css/topcoat-button-bar-mobile-light.css'
-                }]
-            },
-
-            mobiledark: {
-                options: {
-                    import: ['theme-topcoat-mobile-dark']
-                },
-
-                files: [{
-                    src: 'src/topcoat-button-bar.styl',
-                    dest: 'css/topcoat-button-bar-mobile-dark.css'
-                }]
-            },
-
-            desktoplight: {
-                options: {
-                    import: ['theme-topcoat-desktop-light']
-                },
-                files: [{
-                    src: 'src/topcoat-button-bar.styl',
-                    dest: 'css/topcoat-button-bar-desktop-light.css'
-                }]
-            },
-
-            desktopdark: {
-                options: {
-                    import: ['theme-topcoat-desktop-dark']
-                },
-
-                files: [{
-                    src: 'src/topcoat-button-bar.styl',
-                    dest: 'css/topcoat-button-bar-desktop-dark.css'
-                }]
+                        expand: true,
+                        cwd: 'test/fixtures',
+                        src: ['*.css'],
+                        dest: 'css/',
+                        ext: '.css'
+                    }
+                ]
             }
         },
 
@@ -67,20 +51,31 @@ module.exports = function(grunt) {
                     destination: "demo",
                     template: "node_modules/topdoc-theme/",
                     templateData: {
-                        "title": "Topcoat",
-                        "subtitle": "CSS for clean and fast web apps",
-                        "homeURL": "http://topcoat.io"
+                      "title": "Topcoat",
+                      "subtitle": "CSS for clean and fast web apps",
+                      "homeURL": "http://topcoat.io"
                     }
                 }
             }
         },
 
+        autoprefixer: {
+          dist: {
+            files: [{
+              expand: true,
+              cwd: 'css',
+              src: ['*.css', '!*.min.css'],
+              dest: 'css/'
+            }]
+          }
+        },
+
         cssmin: {
             minify: {
                 expand: true,
-                cwd: 'css',
+                cwd: 'release/css/',
                 src: ['*.css', '!*.min.css'],
-                dest: 'css',
+                dest: 'release/css/',
                 ext: '.min.css'
             }
         },
@@ -89,27 +84,21 @@ module.exports = function(grunt) {
             all: {
                 src: ['test/*.test.js']
             }
-        },
-
-        watch: {
-            files: 'src/**/*.styl',
-            tasks: ['build', 'test']
         }
+
     });
 
-
     // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-simple-mocha');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-topcoat');
     grunt.loadNpmTasks('grunt-topdoc');
 
-    // Default task.
-    grunt.registerTask('default', ['clean', 'build', 'test', 'release']);
-    grunt.registerTask('build', ['stylus']);
+    grunt.registerTask('default', ['clean', 'build', 'test','release']);
+    grunt.registerTask('build', ['topcoat']);
     grunt.registerTask('test', ['simplemocha']);
     grunt.registerTask('release', ['cssmin', 'topdoc']);
 
 };
+
