@@ -67,32 +67,32 @@
   extend: %button-bar__item__input;
 }
 
-.topcoat-button-bar__item:not(:last-child) > .topcoat-button-bar__button,
-.topcoat-button-bar__item:not(:last-child) > .topcoat-button-bar__button--large {
+.button-bar__item:not(:last-child) > .button-bar__button,
+.button-bar__item:not(:last-child) > .button-bar__button--large {
   border-right: none;
 }
 
-.topcoat-button-bar__button {
+.button-bar__button {
   extend: .button;
   border-radius: inherit;
 }
 
-.topcoat-button-bar__button:active,
-.topcoat-button-bar__button--large:active,
-:checked + .topcoat-button-bar__button {
+.button-bar__button:active,
+.button-bar__button--large:active,
+:checked + .button-bar__button {
   extend: .button:active;
 }
 
-.topcoat-button-bar__button:disabled {
+.button-bar__button:disabled {
   extend: .button:disabled;
 }
 
-.topcoat-button-bar__button:hover {
+.button-bar__button:hover {
   extend: .button:hover;
 }
 
-.topcoat-button-bar__button:focus,
-.topcoat-button-bar__button--large:focus {
+.button-bar__button:focus,
+.button-bar__button--large:focus {
   extend: .button:focus;
   z-index: 1;
 }
@@ -123,15 +123,15 @@
     - bar
     - large
 */
-.topcoat-button-bar__button--large {
+.button-bar__button--large {
   extend: .button--large;
   border-radius: inherit;
 }
 
-.topcoat-button-bar__button--large:disabled {
+.button-bar__button--large:disabled {
   extend: .button:disabled;
 }
 
-.topcoat-button-bar__button--large:hover {
+.button-bar__button--large:hover {
   extend: .button:hover;
 }

@@ -53,8 +53,9 @@ module.exports = function(grunt) {
                     templateData: {
                       "title": "Topcoat",
                       "subtitle": "CSS for clean and fast web apps",
-                      "homeURL": "http://topcoat.io"
-                    }
+                      "homeURL": "http://topcoat.io",
+                      "debug": true
+                    },
                 }
             }
         },

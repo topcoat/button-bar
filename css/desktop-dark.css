@@ -54,8 +54,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   padding: 0;
   margin: 0;
   font: inherit;
@@ -88,8 +88,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -103,8 +103,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-clip: padding-box;
@@ -122,9 +122,9 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large,
+.topcoat-button-bar__button--large {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -135,8 +135,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -148,8 +148,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   text-overflow: ellipsis;
 }
 
@@ -163,11 +163,11 @@ body {
 .topcoat-button--large--cta:disabled,
 .topcoat-button--large--cta:disabled,
 .topcoat-button--large--cta:disabled,
-.topcoat-topcoat-button-bar__button:disabled,
-.topcoat-topcoat-button-bar__button:disabled,
-.topcoat-topcoat-button-bar__button--large:disabled,
-.topcoat-topcoat-button-bar__button--large:disabled,
-.topcoat-topcoat-button-bar__button--large:disabled {
+.topcoat-button-bar__button:disabled,
+.topcoat-button-bar__button:disabled,
+.topcoat-button-bar__button--large:disabled,
+.topcoat-button-bar__button--large:disabled,
+.topcoat-button-bar__button--large:disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
@@ -179,8 +179,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   text-decoration: none;
 }
 
@@ -190,8 +190,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   padding: 0;
   margin: 0;
   font: inherit;
@@ -224,8 +224,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -239,8 +239,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-clip: padding-box;
@@ -258,9 +258,9 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large,
+.topcoat-button-bar__button--large {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -271,8 +271,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -284,8 +284,8 @@ body {
 .topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta,
-.topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button,
+.topcoat-button-bar__button--large {
   text-overflow: ellipsis;
 }
 
@@ -299,11 +299,11 @@ body {
 .topcoat-button--large--cta:disabled,
 .topcoat-button--large--cta:disabled,
 .topcoat-button--large--cta:disabled,
-.topcoat-topcoat-button-bar__button:disabled,
-.topcoat-topcoat-button-bar__button:disabled,
-.topcoat-topcoat-button-bar__button--large:disabled,
-.topcoat-topcoat-button-bar__button--large:disabled,
-.topcoat-topcoat-button-bar__button--large:disabled {
+.topcoat-button-bar__button:disabled,
+.topcoat-button-bar__button:disabled,
+.topcoat-button-bar__button--large:disabled,
+.topcoat-button-bar__button--large:disabled,
+.topcoat-button-bar__button--large:disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
@@ -362,17 +362,17 @@ body {
   border-bottom-right-radius: 4px;
 }
 
-.topcoat-topcoat-button-bar__item:not(:last-child) > .topcoat-topcoat-button-bar__button,
-.topcoat-topcoat-button-bar__item:not(:last-child) > .topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__item:not(:last-child) > .topcoat-button-bar__button,
+.topcoat-button-bar__item:not(:last-child) > .topcoat-button-bar__button--large {
   border-right: none;
 }
 
-.topcoat-topcoat-button-bar__button {
+.topcoat-button-bar__button {
   border-radius: inherit;
 }
 
-.topcoat-topcoat-button-bar__button:focus,
-.topcoat-topcoat-button-bar__button--large:focus {
+.topcoat-button-bar__button:focus,
+.topcoat-button-bar__button--large:focus {
   z-index: 1;
 }
 
@@ -404,6 +404,6 @@ body {
     - large
 */
 
-.topcoat-topcoat-button-bar__button--large {
+.topcoat-button-bar__button--large {
   border-radius: inherit;
 }
