@@ -36,6 +36,12 @@
           </div>
           <div id="pageNav">
             <ul>
+              <li><a href="#button">Button</a></li>
+              <li><a href="#quiet-button">Quiet Button</a></li>
+              <li><a href="#large-button">Large Button</a></li>
+              <li><a href="#large-quietbutton">Large Quiet Button</a></li>
+              <li><a href="#call-toaction button">Call To Action Button</a></li>
+              <li><a href="#large-callto action button">Large Call To Action Button</a></li>
               <li><a href="#button-bar">Button Bar</a></li>
               <li><a href="#large-buttonbar">Large Button Bar</a></li>
             </ul>
@@ -56,11 +62,107 @@
           </div>
         </header>
         <div id="content" class="max-width">
+          <article id="button" class="component">
+            <header>
+              <h2>Button</h2>
+            </header>
+            <section class="component"><button class="topcoat-button">Button</button><button class="topcoat-button" disabled>Button</button></section>
+            <section class="examples">
+              <h4>Examples</h4>
+              <ul>
+                <li><a href="http://codepen.io/Topcoat/pen/DpKtf">mobile button</a></li>
+              </ul>
+            </section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;topcoat-button&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;topcoat-button&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="quiet-button" class="component">
+            <header>
+              <h2>Quiet Button</h2>
+            </header>
+            <section class="component"><button class="topcoat-button--quiet">Button</button><button class="topcoat-button--quiet" disabled>Button</button></section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;topcoat-button--quiet&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;topcoat-button--quiet&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="large-button" class="component">
+            <header>
+              <h2>Large Button</h2>
+            </header>
+            <section class="component"><button class="topcoat-button--large" >Button</button><button class="topcoat-button--large" disabled>Button</button></section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;topcoat-button--large&quot; &gt;Button&lt;/button&gt;&lt;button class=&quot;topcoat-button--large&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="large-quietbutton" class="component">
+            <header>
+              <h2>Large Quiet Button</h2>
+            </header>
+            <section class="component"><button class="topcoat-button--large--quiet" >Button</button><button class="topcoat-button--large--quiet" disabled>Button</button></section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;topcoat-button--large--quiet&quot; &gt;Button&lt;/button&gt;&lt;button class=&quot;topcoat-button--large--quiet&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="call-toaction button" class="component">
+            <header>
+              <h2>Call To Action Button</h2>
+            </header>
+            <section class="component"><button class="topcoat-button--cta" >Button</button><button class="topcoat-button--cta" disabled>Button</button></section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;topcoat-button--cta&quot; &gt;Button&lt;/button&gt;&lt;button class=&quot;topcoat-button--cta&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="large-callto action button" class="component">
+            <header>
+              <h2>Large Call To Action Button</h2>
+            </header>
+            <section class="component"><button class="topcoat-button--large--cta" >Button</button><button class="topcoat-button--large--cta" disabled>Button</button></section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;button class=&quot;topcoat-button--large--cta&quot; &gt;Button&lt;/button&gt;&lt;button class=&quot;topcoat-button--large--cta&quot; disabled&gt;Button&lt;/button&gt;</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
           <article id="button-bar" class="component">
             <header>
               <h2>Button Bar</h2>
             </header>
-            <section class="component"><div class="topcoat-button-bar">  <div class="topcoat-button-bar__item">    <button class="topcoat-button-bar__button">One</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button-bar__button">Two</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button-bar__button">Three</button>  </div></div></section>
+            <section class="component"><div class="topcoat-button-bar">  <div class="topcoat-button-bar__item">    <button class="topcoat-button">One</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button">Two</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button">Three</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button">Four</button>  </div></div></section>
             <section class="examples">
               <h4>Examples</h4>
               <ul>
@@ -72,7 +174,7 @@
               <section class="code">
                 <div>
                   <h3>HTML</h3>
-                  <pre class="html"><code data-language="html">&lt;div class=&quot;topcoat-button-bar&quot;&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button-bar__button&quot;&gt;One&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button-bar__button&quot;&gt;Two&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button-bar__button&quot;&gt;Three&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;topcoat-button-bar&quot;&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button&quot;&gt;One&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button&quot;&gt;Two&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button&quot;&gt;Three&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button&quot;&gt;Four&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
                 </div>
               </section>
             </footer>
@@ -81,13 +183,13 @@
             <header>
               <h2>Large Button Bar</h2>
             </header>
-            <section class="component"><div class="topcoat-button-bar">  <div class="topcoat-button-bar__item">    <button class="topcoat-button-bar__button--large">One</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button-bar__button--large">Two</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button-bar__button--large">Three</button>  </div></div></section>
+            <section class="component"><div class="topcoat-button-bar">  <div class="topcoat-button-bar__item">    <button class="topcoat-button--large">One</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button--large">Two</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button--large">Three</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button--large">Four</button>  </div>  <div class="topcoat-button-bar__item">    <button class="topcoat-button--large">Five</button>  </div></div></section>
             <footer>
               <div class="showcode"><a href="#">Show code snippets</a></div>
               <section class="code">
                 <div>
                   <h3>HTML</h3>
-                  <pre class="html"><code data-language="html">&lt;div class=&quot;topcoat-button-bar&quot;&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button-bar__button--large&quot;&gt;One&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button-bar__button--large&quot;&gt;Two&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button-bar__button--large&quot;&gt;Three&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;topcoat-button-bar&quot;&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button--large&quot;&gt;One&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button--large&quot;&gt;Two&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button--large&quot;&gt;Three&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button--large&quot;&gt;Four&lt;/button&gt;  &lt;/div&gt;  &lt;div class=&quot;topcoat-button-bar__item&quot;&gt;    &lt;button class=&quot;topcoat-button--large&quot;&gt;Five&lt;/button&gt;  &lt;/div&gt;&lt;/div&gt;</code></pre>
                 </div>
               </section>
             </footer>
