@@ -1,6 +1,6 @@
 {
   "name": "topcoat-button-bar",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Topcoat default button bar skin",
   "main": "index.html",
   "style": "src/button-bar.css",
