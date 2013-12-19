@@ -21,6 +21,7 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
 
         clean: {
             release: ['css'],
@@ -60,23 +61,12 @@ module.exports = function(grunt) {
             }
         },
 
-        autoprefixer: {
-          dist: {
-            files: [{
-              expand: true,
-              cwd: 'css',
-              src: ['*.css', '!*.min.css'],
-              dest: 'css/'
-            }]
-          }
-        },
-
         cssmin: {
             minify: {
                 expand: true,
-                cwd: 'release/css/',
+                cwd: 'css',
                 src: ['*.css', '!*.min.css'],
-                dest: 'release/css/',
+                dest: 'css',
                 ext: '.min.css'
             }
         },
