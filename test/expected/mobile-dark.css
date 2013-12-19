@@ -572,10 +572,11 @@ body {
   border-right: none;
 }
 
-.topcoat-button,
-.topcoat-button--large,
-.topcoat-button--cta,
-.topcoat-button--large--cta {
+.topcoat-button-bar__item > .topcoat-button,
+.topcoat-button_bar__item > .topcoat-button--large,
+.topcoat-button-bar__item > .topcoat-button--large,
+.topcoat-button-bar__item > .topcoat-button--cta,
+.topcoat-button-bar__item > .topcoat-button--large--cta {
   border-radius: inherit;
 }
 
@@ -626,7 +627,3 @@ body {
     - bar
     - large
 */
-
-.topcoat-button--large {
-  border-radius: inherit;
-}

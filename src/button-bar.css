@@ -75,7 +75,8 @@
   border-right: none;
 }
 
-.button {
+.button-bar__item > .button,
+.button_bar__item > .button--large {
   border-radius: inherit;
 }
 
@@ -120,7 +121,4 @@
     - bar
     - large
 */
-.button--large {
-  border-radius: inherit;
-}
 
