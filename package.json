@@ -40,7 +40,7 @@
     "topcoat-theme-desktop-dark": "~0.1.7"
   },
   "dependencies": {
-    "topcoat-button-bar-base": "~0.1.4",
-    "topcoat-button": "~0.6.2"
+    "topcoat-button": "~0.6.2",
+    "topcoat-button-bar-base": "~0.1.5"
   }
 }
