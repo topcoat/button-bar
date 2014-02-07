@@ -72,7 +72,7 @@
 
 .button-bar__item:not(:last-child) > .button,
 .button-bar__item:not(:last-child) > .button--large {
-  border-right: none;
+  margin-right: -1px;
 }
 
 .button-bar__item > .button,
@@ -80,14 +80,17 @@
   border-radius: inherit;
 }
 
+.button:active,
+.button--large:active,
 :checked + .button {
   extend: .button:active;
 }
 
-.button:focus,
-.button--large:focus {
-  z-index: 1;
+.button-bar__item > .button:focus,
+.button-bar__item > .button--large:focus {
+  extend: %button-bar__button--focus;
 }
+
 /* topdoc
   name: Large Button Bar
   description: A button bar, only larger
