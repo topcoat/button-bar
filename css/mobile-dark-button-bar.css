@@ -226,12 +226,8 @@ body {
 .topcoat-button--large--cta:active,
 .topcoat-button:active:active,
 .topcoat-button--large:active:active,
-:checked + .topcoat-button:active,
-:checked + .topcoat-button--large:active,
 .topcoat-button--cta:active:active,
-:checked + .topcoat-button--cta:active,
-.topcoat-button--large--cta:active:active,
-:checked + .topcoat-button--large--cta:active {
+.topcoat-button--large--cta:active:active {
   background-color: hsla(210, 2%, 25%, 1);
   box-shadow: inset 0 1px hsla(0, 0%, 0%, .05);
 }
@@ -438,6 +434,18 @@ body {
   border-bottom-right-radius: 6px;
 }
 
+.topcoat-button-bar__item > input {
+  pointer-events: none;
+}
+
+:checked + .topcoat-button,
+:checked + .topcoat-button--large,
+:checked + .topcoat-button--cta,
+:checked + .topcoat-button--large--cta {
+  background-color: hsla(210, 2%, 25%, 1);
+  box-shadow: inset 0 1px hsla(0, 0%, 0%, .05);
+}
+
 .topcoat-button-bar__item:not(:last-child) > .topcoat-button,
 .topcoat-button-bar__item:not(:last-child) > .topcoat-button--large,
 .topcoat-button-bar__item:not(:last-child) > .topcoat-button--cta,
@@ -495,20 +503,20 @@ body {
   markup:
     <div class="topcoat-button-bar">
       <label class="topcoat-button-bar__item">
-        <input type="radio" name="topcoat">
-        <button class="topcoat-button">One</button>
+        <input type="radio" name="topcoat" checked>
+        <div class="topcoat-button">One</div>
       </label>
       <label class="topcoat-button-bar__item">
         <input type="radio" name="topcoat">
-        <button class="topcoat-button">Two</button>
+        <div class="topcoat-button">Two</div>
       </label>
       <label class="topcoat-button-bar__item">
         <input type="radio" name="topcoat">
-        <button class="topcoat-button">Three</button>
+        <div class="topcoat-button">Three</div>
       </label>
       <label class="topcoat-button-bar__item">
         <input type="radio" name="topcoat">
-        <button class="topcoat-button">Four</button>
+        <div class="topcoat-button">Four</div>
       </label>
     </div>
   examples:

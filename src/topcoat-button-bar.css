@@ -51,6 +51,12 @@
 
 .button-bar__item > input {
   @extend: %button-bar__item__input;
+  pointer-events: none;
+}
+
+:checked + .button {
+  background-color: var(--background-color--down);
+  box-shadow: var(--box-shadow--down);
 }
 
 .button-bar__item:not(:last-child) > .button,
@@ -64,8 +70,7 @@
 }
 
 .button:active,
-.button--large:active,
-:checked + .button {
+.button--large:active {
   @extend: .button:active;
 }
 
@@ -115,20 +120,20 @@
   markup:
     <div class="topcoat-button-bar">
       <label class="topcoat-button-bar__item">
-        <input type="radio" name="topcoat">
-        <button class="topcoat-button">One</button>
+        <input type="radio" name="topcoat" checked>
+        <div class="topcoat-button">One</div>
       </label>
       <label class="topcoat-button-bar__item">
         <input type="radio" name="topcoat">
-        <button class="topcoat-button">Two</button>
+        <div class="topcoat-button">Two</div>
       </label>
       <label class="topcoat-button-bar__item">
         <input type="radio" name="topcoat">
-        <button class="topcoat-button">Three</button>
+        <div class="topcoat-button">Three</div>
       </label>
       <label class="topcoat-button-bar__item">
         <input type="radio" name="topcoat">
-        <button class="topcoat-button">Four</button>
+        <div class="topcoat-button">Four</div>
       </label>
     </div>
   examples:

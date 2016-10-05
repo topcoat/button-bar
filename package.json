@@ -1,8 +1,7 @@
 {
   "name": "topcoat-button-bar",
-  "version": "0.2.1",
   "description": "Topcoat default button bar skin",
-  "style": "src/button-bar",
+  "style": "src/topcoat-button-bar",
   "directories": {
     "test": "test",
     "lib": "src",
@@ -22,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:topcoat/button-bar.git"
+    "url": "https://github.com/topcoat/button-bar.git"
   },
   "keywords": [
     "css",
