@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "topcoat-button": "^0.7.1",
-    "topcoat-button-bar-base": "^1.0.0"
+    "topcoat-button-bar-base": "^1.0.1"
   },
   "config": {
     "commitizen": {
